@@ -10,7 +10,7 @@ function generateBooks(event) {
   event.preventDefault();
   let subjectElement = document.querySelector("#subject");
   let apiKey = `501af34b402d4e44o6622bceat198ee8`;
-  let prompt = `Please list 3 books from The New York Times Best Seller list in the genre of ${subjectElement.value} and a 20 word blurb. Separate the information of each book with <br/>`;
+  let prompt = `Please list 5 books from The New York Times Best Seller list in the genre of ${subjectElement.value} and a 20 word blurb. Separate the information of each book with <br/>`;
   let context =
     "You are an AI with vast knowledge of Best Sellers book titles. Enumerate each book. The book titles and its author should be <strong>. ";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
