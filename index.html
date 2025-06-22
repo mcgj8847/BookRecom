@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="src/styles.css" rel="stylesheet" type="text/css" />
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>📖AI Book Recomender 📖</h1>
+  </header>
+  <main>
+    <div id="container" class="container">
+      <form id="form" class="form">
+        <input type="text" placeholder="Please write the genre of your next book (e.g.: fantasy, romance, historical)"
+          autofocus required id="subject" class="subject">
+        <input type="submit" id="submitButton" class="submitButton" value="Generate">
+      </form>
+      <div id="book" class="book hidden"></div>
+  </main>
+  </div>
+
+  <footer>
+    <p>
+      This project was coded by
+      <a href="#" target="_blank">María Cristina Guzmán Juárez</a> and is
+      <a href="https://github.com/mcgj8847" target="_blank"> on GitHub</a> and
+      <a href="https://www.netlify.com/" target="_blank">hosted on Netlify</a>
+    </p>
+  </footer>
+  </div>
+
+
+  <script src="src/index.js"></script>
+</body>
+
+</html>
